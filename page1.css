@@ -1,0 +1,133 @@
+@font-face {
+    font-family: tempel;
+    src:url('tempelsoftland-condensed-TRIAL.otf')
+}
+@font-face {
+    font-family: metrik;
+    src:url('MetrikTrial-Italic.otf')
+}
+@font-face {
+    font-family: tempCond;
+    src:url('tempelsoftland-ultracondensed-TRIAL.otf')
+}
+
+
+body {
+    background-color: black;
+    max-width: fit-content;
+}
+
+/* main div container formatiing */
+.mainWrapper { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 0;
+}
+
+.heading{
+    /* heading class grid formatiing */
+    color: #f3eee0;
+    position: fixed;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    z-index: 1;
+    margin-top: 2vw;
+    margin-left: 1%;
+    margin-right: 1vw;
+    /* text formatiing */
+    text-align: center;
+    font-family: "tempel";
+    font-size: 6vw;
+    letter-spacing: 0.5vw;
+    line-height: 5vw;
+}
+
+
+.subForm{
+    -webkit-text-fill-color:  black; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#f3eee0;  
+}
+
+a {
+    display: block;
+    flex-wrap: wrap;
+    color: #f3eee0;
+    text-decoration: none;
+    background-size: 10vw;
+}
+.menu1{
+    /* menu class grid formatiing */
+    position: relative;
+    grid-column: 1/1;
+    grid-row: 5;
+    z-index: 1;
+    left: 3%;
+    /* text formatiing */
+    font-family: "tempel";
+    font-size: 2vw;
+    letter-spacing: .25vw;
+    line-height: 5vw;
+    /* button formatting */
+    padding:1%;
+    background-color: black; 
+    margin: .5vw; 
+    width: 15vw;  
+    border: 3px solid#f3eee0; 
+    border-radius: 70px; 
+    text-align: center; 
+}
+
+.menu2{
+    /* menu class grid formatiing */
+    position: relative;
+    grid-column: 1/1;
+    grid-row: 6;
+    z-index: 1;
+    left: 3%;
+    /* text formatiing */
+    font-family: "tempel";
+    font-size: 2vw;
+    letter-spacing: .25vw;
+    line-height: 5vw;
+    /* button formatting */
+    padding:1%;
+    background-color:black; 
+    margin: .5vw; 
+    width: 15vw;  
+    border: 3px solid #f3eee0; 
+    border-radius: 70vw; 
+    text-align: center; 
+    }
+
+.footer{
+     /* footer class grid formatiing */
+     font-family: tempCond;
+     font-size: 1.5vw;
+     color: #f3eee0;
+     position: absolute;
+     grid-column: 1/1;
+     grid-row: 8;
+     z-index: 1;
+     left: 5.5%;
+     bottom: 3%;
+     letter-spacing: .2vw;
+}
+
+img {
+    width: 80vw;
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    bottom: 1%;
+    border-radius: 30px ;
+}
+
+.bigImg {
+    max-width: 100%;
+    top:5%;
+    bottom: 5%;
+}
+
